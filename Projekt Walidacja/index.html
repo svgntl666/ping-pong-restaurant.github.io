@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Ping-Pong Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Prosty navbar -->
+    <nav>
+        <section class="nav_nav">
+            <a href="https://nonsa.pl/wiki/Kielce" target="_blank"><img src="imgs/logo.png" alt="pierwsza_linijka_tekstu = inspiracja dla nazwy lokalu" class="logo"></a>
+            <a href="#"><button class="nav_btn_a" id="str_gl">Strona Główna</button></a>
+            <a href="#"><button class="nav_btn_a">Zamów Online</button></a>
+            <a href="#"><button class="nav_btn_a">Rezerwacja</button></a>
+            <a href="#"><button class="nav_btn_a">Menu</button></a>
+            <a href="#"><button class="nav_btn_a">O restauracji</button></a>
+            <a href="#kontakt"><button class="nav_btn_a">Kontakt</button></a>
+        </section>
+        <section class="nav_main">
+            <div class="nav_main_a">
+                <h1 style="text-transform: uppercase; font-size: 35px;">"Nie fundujemy<a href="#" class="tajne_menu" target="_blank">psiego</a>mięsa"</h1>
+                <p>~ Pracownik, którego ostatnio zwolniliśmy.</p>
+            </div>
+            <div class="nav_main_b">
+            <a href="#"><button class="nav_btn_b">Menu</button></a>
+            <a href="#"><button class="nav_btn_b">Zamów Online</button></a>
+            <a href="#"><button class="nav_btn_b">Rezerwacja</button></a>
+            </div>
+        </section>
+    </nav>
+
+    <!-- Main tylko po to, żeby móc jednym flexem ułożyć całą zawartość -->
+    <main>
+        <section class="banner_a">
+            <p></p>
+            <h1>Gwiazdy restauracji:</h1>
+            <p>(kliknij aby wyświetlić menu)</p>
+            <section class="banner_a_a">
+                <div class="banner_a_blok">
+                    <button class="przystawki_przycisk"><img src="imgs/przystawki.jpg" alt=""></button>
+                    <h1>Przystawki</h1>
+                    <p>"N"</p>
+
+                    <!-- po kliknięciu -->
+                     <div class="przystawki">
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/przystawka1.jpg" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 1</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 2</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/przystawka2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/przystawka3.webp" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 3</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 4</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/przystawka4.webp" alt="">
+                            </div>
+                        </div>
+                     </div>
+                </div>
+                <div class="banner_a_blok">
+                    <button class="dania_glowne_b"><img src="imgs/danie_glowne.jpg" alt=""></button>
+                    <h1>Dania główne</h1>
+                    <p>"Zapchaj się ryżem!"</p>
+
+                    <!-- po kliknięciu -->
+                    <div class="dania_glowne_f">
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/glowne1.jpg" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 1</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 2</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/glowne2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/glowne3.jpg" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 3</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 4</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/glowne4.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner_a_blok">
+                    <button class="desery_b"><img src="imgs/desery.jpg" alt=""></button>
+                    <h1>Desery</h1>
+                    <p>"Tak dobre, że Tajwan chciał ukraść patent"</p>
+
+                    <!-- po kliknięciu -->
+                     <div class="desery_f">
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/deser1.webp" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 1</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 2</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/deser2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/deser3.webp" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 3</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 4</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/deser4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="banner_a_blok">
+                    <button class="napoje_b"><img src="imgs/napoje.jpg" alt=""></button>
+                    <h1>Napoje</h1>
+                    <p>"Chiny dla Chińczyków!"</p>
+
+                    <!-- po kliknięciu -->
+                    <div class="napoje_f">
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/picie1.webp" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 1</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 2</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/picie2.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_l">
+                                <img src="imgs/picie3.jpg" alt="">
+                            </div>
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 3</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                        </div>
+
+                        <div class="jedzenie_blok">
+                            <div class="jedzenie_p">
+                                <h1>Przystawka 4</h1>
+                                <p>Opis:</p>
+                                <p>Cena:</p>
+                            </div>
+                            <div class="jedzenie_l">
+                                <img src="imgs/picie4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="banner_b">
+            <section class="banner_b_1">
+                <h1>Nowości w menu od 01.07.2026!</h1>
+                <p>Dodajemy do oferty następujące dania:</p>
+                <p>-</p>
+                <p>-</p>
+                <p>-</p>
+            </section>
+            <section class="banner_b_2">
+                <h1>Nowa promocja</h1>
+                <p>Zamów zestaw dla 5 osób, a dodatkowo dostaniesz do wyboru:</p>
+                <p><small>(najedź, aby zobaczyć 'opis' przedmiotu)</small></p>
+                <br><br><br>
+                    <div class="promocja">
+                        <div class="banner_promocja torebka">
+                            <div class="okno_opisowe1">Foliowa torebka
+                                <div class="opis1">Torebka, której ty użyjesz tylko jeden raz, a my używaliśmy jej od dekad. Opiekuj się nią dobrze.</div>
+                            </div>
+                        </div>
+                        <div class="banner_promocja  opakowanie">
+                            <div class="okno_opisowe1">Opakowanie jednorazowe
+                                <div class="opis1">Tak naprawdę jest wielorazowe, dopóki się nie zamoczy (zawsze wydajemy mokre).</div>
+                            </div>
+                        </div>
+                        <div class="banner_promocja  napoj">
+                            <div class="okno_opisowe1">Wybrany napój 
+                                <div class="opis1">, którego zawartość nie przekracza 330ml. Do naszych potraw potrzebujemy ryżu, a żeby ryż urósł, potrzebuje wody. Lepiej sprawdź ofertę alkoholową w karcie dań, tego ryż nie wypije.</div>
+                            </div>
+                        </div>
+                    </div><br><br><br><br>
+                <!-- <p>- Opakowanie jednorazowe</p>
+                <p>- Foliową torebkę</p>
+                <p>- Wybrany napój (którego zawartość nie przekracza 330ml)</p> -->
+                <a href="#"><button class="nav_btn_b2">ZAMÓW!</button></a>
+            </section>
+            <section class="banner_b_3">
+                <h1>Nasze media społecznościowe</h1>
+                <div class="b_b_3_1">
+                    <a href="instagram.com/@pingpong_restauracjaxd" target="_blank">
+                        <div class="sociale"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg> INSTAGRAM</div>
+                    </a>
+                    <a href="facebook.com/@pingpong_restauracjaxd" target="_blank">
+                        <div class="sociale"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg> FACEBOOK</div>
+                    </a>
+                    <a href="tiktok.com/@pingpong_restauracjaxd" target="_blank">
+                        <div class="sociale"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                          <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg> TIKTOK</div>
+                    </a>
+                </div>
+                <p>Zrób kreatywne zdjęcie z lokalu i walcz o nagrody!</p>
+                <p>Co miesiąc losowanie!</p>
+                <p>Zobacz zdjęcia i nagrody z poprzedniego miesiąca:</p>
+                <a href="" style="border: none;"><button class="nav_btn_b3">ZOBACZ</button></a>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer 1/2 -->
+    <section class="abt">
+        <h1>Znajdź nasz lokal</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57012.05114234972!2d125.74836734783688!3d39.03994181786855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fd5f86886d732a5%3A0xa074673a1b6d16d5!2zUGHFgmFjIEvFrW1zdXNhbg!5e1!3m2!1spl!2spl!4v1747675434460!5m2!1spl!2spl" width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Jesteśmy otwarci codziennie w godzinach 12:00-02:00</p>
+    </section>
+
+    <!-- Footer 2/2 -->
+     <footer>
+        <section class="footer_g">
+            <div>Ping-Pong Ltd.</div>
+            <div><img src="imgs/logo.png" alt="" style="height: 100px;"></div>
+        </section>
+        <section class="footer_d">
+            <div class="fd1">
+                <h1>Sociale</h1>
+                <a href="instagram.com/@pingpong_restauracjaxd" target="_blank">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg> INSTAGRAM</div><br>
+                </a>
+                <a href="facebook.com/@pingpong_restauracjaxd" target="_blank">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg> FACEBOOK</div><br>
+                </a>
+                <a href="tiktok.com/@pingpong_restauracjaxd" target="_blank">
+                    <div><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg> TIKTOK</div><br>
+                </a>
+            </div>
+            <div class="fd2">
+                <h1>Kontakt</h1>
+                <p>+41 213 769 420</p>
+                <p>ul. XD, Korea Płn. 21-370</p>
+                <p>pingpong@kontakt.cn</p>
+                <button class="form_kont">Formularz kontaktowy</button>
+            </div>
+            <div class="fd3">
+                <h1>Nawigacja</h1>
+                <a href="#">Strona główna</a>
+                <a href="#">Zamów online</a>
+                <a href="#">Rezerwacja</a>
+                <a href="#">Menu</a>
+                <a href="#">O restauracji</a>
+                <a href="#kontakt" id="kontakt">Kontakt</a>
+            </div>
+        </section>
+        <section class="footer_f">Autor: Hubert Pasisz 4A/2, Data:</section>
+     </footer>
+
+     <script src="script.js"></script>
+</body>
+</html>

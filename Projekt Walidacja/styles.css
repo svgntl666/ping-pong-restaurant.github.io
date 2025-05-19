@@ -1,0 +1,521 @@
+:root { 
+    /* :root tylko dlatego, że miało być do 5 kolorów (po 6h pisania kodu zmieniam zdanie, jest zdecydowanie więcej kolorów) i żebym nie musiał jak debil kopiować*/
+    --main: #090809;
+    --secondary: #F40000;
+    --tertiary: #F44E3F;
+    --tekstA: #F4796B;
+    --tekstB: #F4998D;
+}
+
+
+body {
+    background-color: var(--main);
+    color: var(--tekstB);
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_nav {
+    background-color: #f4000062;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    font-weight: 700;
+    position: fixed;
+    z-index: 999;
+    backdrop-filter: blur(4px);
+}
+
+.nav_nav img {
+    height: 75px;
+    width: 75px;
+    margin-left: 10px;
+}
+
+.nav_nav a:last-child {
+    margin-right: 100px;
+}
+
+.nav_btn_a {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3.5px solid transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 30px;
+    width: auto;
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.nav_btn_a:hover {
+    color: var(--tekstA);
+    cursor: grab;
+    border-bottom: 3.5px solid var(--tertiary);
+}
+
+.nav_main {
+    width: 100%;
+    height: 500px;
+    background-color: var(--tertiary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    background-image: url(imgs/banner2.jpg);
+    background-size: cover;
+    border-bottom: 3px solid var(--tertiary);
+    margin-bottom: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_main_b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.nav_main a{
+    margin: 15px;
+}
+
+.nav_btn_b {
+    height: 10px;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary);
+    color: var(--tekstB);
+    text-transform: uppercase;
+    border: 3px solid var(--tekstA);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 10px 15px 30px black;
+}
+
+.nav_btn_b:hover {
+    color: var(--tekstA);
+    border: 3px solid var(--tekstB);
+    cursor: grab;
+}
+
+.tajne_menu {
+    color: var(--tekstB);
+}
+
+.tajne_menu:hover {
+    color: var(--tekstB);
+    cursor: default;
+}
+
+.banner_a {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(imgs/banner1.png);
+}
+
+.banner_a_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.banner_a_blok img {
+    height: 380px;
+    width: 290px;
+    object-fit: cover;
+    filter: brightness(0.3);
+    transition: 0.5s;
+}
+
+.banner_a_blok img:hover {
+    filter: brightness(1);
+}
+
+.banner_a_blok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.przystawki {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: white;
+    font-weight: 700;
+}
+
+.dania_glowne_f {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: white;
+    font-weight: 700;
+}
+
+.napoje_f {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: white;
+    font-weight: 700;
+}
+
+.desery_f {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: white;
+    font-weight: 700;
+}
+
+.jedzenie_blok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.jedzenie_blok img {
+    filter: brightness(1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.jedzenie_p, .jedzenie_l {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jedzenie_p {
+    margin: 15px 0;
+    padding: 5px;
+    width: 290px;
+    border: 1px solid var(--secondary);
+    color: var(--tertiary);
+    box-shadow: 5px 5px 10px black;
+}
+
+.przystawki_przycisk, .dania_glowne_b, .desery_b, .napoje_b{
+    border: transparent;
+    background-color: transparent;
+}
+
+.banner_b {
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner_b_1 {
+    width: 100%;
+    height: 400px;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 3px solid var(--tertiary);
+}
+
+.banner_b_2 {
+    width: 100%;
+    height: 650px;
+    background-color: var(--tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner_b_3 {
+    width: 100%;
+    height: 400px;
+    background-color: var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.b_b_3_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sociale {
+    margin: 15px;
+}
+
+.abt {
+    width: 100%;
+    height: 500px;
+    background-color: var(--tertiary);
+    color: var(--tekstB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    background-image: url(imgs/banner1.png);
+}
+
+.footer_g {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.footer_d {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 25px;
+    height: 350px;
+}
+
+.fd1, .fd2, .fd3 {
+    padding: 0 45px;
+}
+.footer_f {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    color: white;
+    border-top: 2px solid var(--tekstA);
+}
+
+.fd3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fd3 a{
+    color: var(--tekstA);
+}
+
+.fd3 a:hover {
+    color: var(--secondary);
+}
+
+.form_kont {
+    background-color: transparent;
+    border: none;
+    color: var(--tertiary);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.form_kont:hover {
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+}
+
+.nav_nav img{
+    height: 100px;
+    width: 215px;
+}
+
+.nav_btn_b2 {
+    height: 10px;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary);
+    color: var(--tekstB);
+    text-transform: uppercase;
+    border: 3px solid var(--tekstA);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 10px 15px 30px black;
+}
+
+.nav_btn_b2:hover {
+    color: var(--secondary);
+    border: 3px solid var(--secondary);
+}
+
+.banner_b_3 a, footer a{
+    color: var(--tekstA);
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+.banner_b_3 a:hover, footer a:hover {
+    color: var(--secondary);
+    border-bottom: 2px solid var(--secondary);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav_btn_b3 {
+    height: 10px;
+    width: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--tertiary);
+    color: var(--tekstB);
+    text-transform: uppercase;
+    border: 3px solid var(--tekstA);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: 0.3s;
+    box-shadow: 10px 15px 30px black;
+}
+
+.nav_btn_b3:hover {
+    color: var(--secondary);
+    border: 3px solid var(--secondary);
+}
+
+.promocja {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_promocja {
+    margin: 20px;
+    width: 350px;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.okno_opisowe1 {
+    width: 95%;
+    padding: 20px 0;
+      margin: 10px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      font-family: sans-serif;
+      background-color: var(--tekstA);
+      opacity: 50%;
+      color: white;
+}
+
+.okno_opisowe1:hover .opis1{
+      max-height: 250px;
+      padding: 20px;
+      filter: brightness(1);
+      transition: 0.5s;
+}
+
+.banner_promocja:hover .okno_opisowe1{
+    opacity: 100%;
+}
+
+.okno_opisowe1:hover {
+    opacity: 100%;
+    background-color: var(--tertiary);
+}
+
+.opis1 {
+    max-height: 0;
+      overflow: hidden;
+      background-color: var(--tertiary);
+      color: white;
+      padding: 0 20px;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      border-radius: 12px;
+}
+
+.torebka {
+    background-image: url(imgs/torebka.jpg);
+}
+
+.opakowanie {
+    background-image: url(imgs/opakowanie.jpg);
+}
+
+.napoj {
+    background-image: url(imgs/woda.jpg);
+}
+
+.torebka, .opakowanie, .napoj {
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+
+.torebka:hover, .opakowanie:hover, .napoj:hover {
+    filter: brightness(1);
+    
+}
